@@ -13,3 +13,5 @@ export {
   isDate,
   isNullOrUnDefOrStringEmpty,
 } from "./lib/is";
+
+export { createStorage } from "./lib/storage";
