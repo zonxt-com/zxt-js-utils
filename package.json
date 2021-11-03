@@ -1,5 +1,5 @@
 {
-  "name": "zxt-utils",
+  "name": "zxt-js-utils",
   "version": "0.0.1",
   "description": "Js common utils",
   "main": "dist/index.js",
@@ -10,9 +10,13 @@
     "build": "rimraf dist && tsc -p ."
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.0.2",
     "@types/node": "^16.11.6",
     "rimraf": "^3.0.2",
     "typescript": "^4.4.4",
     "vite": "^2.6.13"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1"
   }
 }
