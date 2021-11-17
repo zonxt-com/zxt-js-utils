@@ -9,6 +9,7 @@
     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
     "strict": true,                                      /* Enable all strict type-checking options. */
     "noUnusedLocals": true,                             /* Enable error reporting when a local variables aren't read. */
+    "suppressImplicitAnyIndexErrors": true,
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": ["./src"]

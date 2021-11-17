@@ -16,6 +16,18 @@ export const toCamelCase = (str: string) => {
 };
 
 /**
+ * 转json对象
+ * @param value 字符串数组
+ */
+export const toJsonObject = (value: string[]) => {
+  let obj = {};
+  value.forEach((x) => {
+    obj[x] = x;
+  });
+  return obj;
+};
+
+/**
  * to snake case
  * @param {string} str
  * @returns {string} snake case str
