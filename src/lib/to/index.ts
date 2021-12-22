@@ -16,6 +16,16 @@ export const toCamelCase = (str: string) => {
 };
 
 /**
+ * 转decimal
+ * @param {number} value
+ * @param {number} num 保留位数
+ * @returns
+ */
+export const toDecimal = (value: number, num = 2): string => {
+  return new Number(value).toFixed(num);
+};
+
+/**
  * 转json对象
  * @param value 字符串数组
  */
