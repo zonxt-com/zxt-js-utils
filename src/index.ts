@@ -2,7 +2,12 @@ export { calculateStringWidth } from "./lib/calculate";
 export { createStorage } from "./lib/storage";
 export { deepCopy } from "./lib/object";
 export { debounce } from "./lib/debounce";
-export { timeFormat, getTimestamp, getFirstDayOfYear } from "./lib/datetime";
+export {
+  timeFormat,
+  timeLargeCompare,
+  getTimestamp,
+  getFirstDayOfYear,
+} from "./lib/datetime";
 export {
   isNull,
   isDef,

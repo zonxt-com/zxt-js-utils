@@ -23,6 +23,15 @@ export const timeFormat = (
 };
 
 /**
+ * 时间大小比较
+ * @param {string} time1 HH:mm
+ * @param {string} time1 HH:mm
+ */
+export const timeLargeCompare = (time1: string, time2: string): boolean => {
+  return parseInt(time1.replace(":", "")) > parseInt(time2.replace(":", ""));
+};
+
+/**
  * 获取时间戳
  * @param str datetime时间字符串
  * @returns 时间戳
