@@ -25,4 +25,10 @@ export {
 } from "./lib/is";
 export { md5 } from "./lib/crypto";
 export { parseUrlParams, parseUrlParamsValue } from "./lib/url";
-export { toCamelCase, toDecimal, toJsonObject, toSnakeCase } from "./lib/to";
+export {
+  toCamelCase,
+  toDecimal,
+  toJsonObject,
+  toSnakeCase,
+  toTreeArray,
+} from "./lib/to";

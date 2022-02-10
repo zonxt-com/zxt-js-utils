@@ -51,3 +51,39 @@ export const toSnakeCase = (str: string) => {
     .replace(/[^A-Za-z0-9]+|_+/g, "_")
     .toLowerCase();
 };
+
+/**
+ * to tree array
+ * @param arr
+ * @param idKey
+ * @param pidKey
+ * @param childrenKey
+ */
+export const toTreeArray = (
+  arr: any[],
+  idKey: string = "id",
+  pidKey: string = "parentId",
+  childrenKey: string = "children"
+): any[] => {
+  const result: any[] = [];
+
+  if (!Array.isArray(arr)) {
+    throw new Error("to tree array error: arr is not a array data!");
+  }
+
+  let map = {};
+  arr.forEach((item) => {
+    map[item[idKey]] = item;
+  });
+  arr.forEach((item) => {
+    const pItem = map[item[pidKey]];
+    if (pItem) {
+      pItem[childrenKey] = pItem[childrenKey] || [];
+      (pItem[childrenKey] as any).push(item);
+    } else {
+      result.push(item);
+    }
+  });
+
+  return result;
+};

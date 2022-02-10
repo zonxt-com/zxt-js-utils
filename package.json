@@ -1,6 +1,6 @@
 {
   "name": "zxt-js-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Js common utils",
   "main": "dist/index.js",
   "author": "zonxt.com",
